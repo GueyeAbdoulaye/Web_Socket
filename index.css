@@ -1,0 +1,134 @@
+body {
+  background-color: #444448;
+  overflow: hidden;
+}
+.title {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+}
+.title h1 span {
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.separation {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  margin: 50px;
+  position: absolute;
+  left: 20%;
+}
+
+#eraser-button {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  color: rgb(26, 25, 25);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#canvas {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.separation1 {
+  row-gap: 10px;
+  column-gap: 10px;
+  align-items: self-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box-chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cta {
+  color: #e7e7e7;
+}
+
+#chat-container {
+  width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Pseudonyme {
+  font-size: 20px;
+}
+
+#chat-messages {
+  border: 2px solid #ccc;
+  height: 300px;
+  padding: 10px;
+}
+
+.test{
+  color: rgb(26, 24, 24);
+}
+
+#formulaire {
+  padding: 10px;
+  text-align: center;
+}
+ 
+#formulaire input[type="text"] {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  width: 80%;
+}
+
+#formulaire button {
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgba(18, 10, 10, 0.178);
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-wrappers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+}
+
+.cta, .cta-send {
+    padding: 1em;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.cta.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.error {
+    opacity: 0;
+    color: red;
+}

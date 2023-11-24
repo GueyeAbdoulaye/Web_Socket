@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pixel War</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="title">
+        <h1 style="position: center">
+          Pixel World
+          <span>by Abdoulaye</span>
+        </h1>
+      </div>
+
+      <div class="separation">
+        <div class="separation1">
+          <canvas id="canvas" width="500" height="500"> </canvas>
+
+          <button id="eraser-button" class="cta">Draw/Erase</button>
+        </div>
+
+        <div class="box-chat"> 
+          <div>
+            <h1 class="test">Identifie toi pour jouer</h1>
+            <form id="login-form">
+              <label class="Pseudonyme" for="username">Pseudonyme : </label>
+              <input type="text" placeholder="ex: Michael B Jordan" id="username" required />
+              <button type="submit"  class="cta">Se connecter</button>
+            </form>
+          </div>
+          <div id="chat-container">
+            <div id="chat-messages"></div>
+              <div id="formulaire">
+                <input type="text" id="chat-input" placeholder="Lets talk" />
+                <button id="send-button" class="cta">Envoyer</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
