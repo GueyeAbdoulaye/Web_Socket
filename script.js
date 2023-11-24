@@ -60,14 +60,20 @@ function sendMessage() {
 function displayMessage(message, username) {
   const content = document.createElement("div");
   content.setAttribute("class", "message");
-
+  
+  const textAlignStyle = username !== getCurrentUsername() ? "text-align: right ; font-size: 16px;" : "";
   // possible xss injection but that was the only way i could do it using plain js
   content.innerHTML = `
-    <p class="userName">by ${username}</p>
-        <p class="content">${message}</p>
+    <p class="userName" style="${textAlignStyle} ">by ${username}</p>
+        <p class="content" style="${textAlignStyle}">${message}</p>
     `;
 
   chatMessages.appendChild(content);
+}
+
+function getCurrentUsername() {
+  const username = JSON.parse(localStorage.getItem("username"));
+  return username;
 }
 
 loginForm.addEventListener("submit", function (event) {
