@@ -97,7 +97,7 @@ canvas.addEventListener("click", (event) => {
     const id = `$(x),$(y)`;
     data = {
       action: "remove",
-      data: { id, x, y, color: "#ffffff" }, // Utilisez "#ffffff" pour le blanc
+      data: { id, x, y, color: "#444448"  }, // Utilisez "#ffffff" pour le blanc
     };
     console.log("DATA");
   } else {
